@@ -240,6 +240,46 @@ p{
     margin-bottom: 50px;
 }
 
+/*TITLES*/
+.testimonials h2,
+.benefits h2,
+.get-started h2{
+    font-size: 40px;
+}
+
+
+
+/*TESTIMONIALS*/
+
+.testimonials-title > *{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.testimonials-title h2{
+    color: var(--purple);
+}
+
+.testimonials-cards .card-features{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.testimonial-img{
+    border-radius: 100%; 
+    width: 200px;
+    height: 200px;
+}
+
+.testimonials-cards .card-features>*{
+    padding-left: 20px;
+}
+
+
+
+/*MEDIA QUERY*/
+
 @media (max-width: 575.98px) {
     /*hero*/
     .hero [class^=col-]{
