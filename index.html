@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/382dfa8eb4.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -22,6 +22,9 @@
                         <li><a href="#" class="nav-list-item">About us</a></li>
                         <li><a href="#" class="nav-list-item button" id="nav-list-button">Get started</a></li>
                     </ul>
+                    <div class="nav-list-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
             </nav>
         </div>
     </header>
@@ -29,57 +32,78 @@
         <section class="hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-8 card" id="big-card">
-                        <div class="big-card-left">
-                            <h3 class="card-header">Get a demo application</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, id necessitatibus commodi rem laboriosam quia autem eius ad earum reprehenderit?</p>
-                            <div>
-                                <a href="#" class="button" id="download-button">
-                                    <i class="fa-brands fa-apple"></i>
-                                    <strong>App Store</strong>
-                                </a>
+                    <div class="col-8">
+                        <div class="card" id="big-card">
+                            <div class="card-features">
+                                <div class="col-6">
+                                    <h3 class="card-header">Get a demo application</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas dolores dignissimos quod at itaque reiciendis ipsam quia corporis. Eos porro mollitia odio iste fuga labore rem quasi repellendus id dolores. Quidem, quis! Aut, distinctio architecto!</p>
+                                    <div>
+                                        <a href="#" class="button" id="download-button">
+                                            <i class="fa-brands fa-apple"></i>
+                                            <strong>App Store</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                                <figure class="col-6" id="phone">
+                                        <img src="./img/phone.png">
+                                </figure>
                             </div>
                         </div>
-                        <div class="big-card-right">
-                                <img src="./img/phone.png" alt="">
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-features">
+                                <div class="card-header">
+                                    <i class="fa-regular fa-file-code"></i>
+                                    <h3>Clean code</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum sed architecto nisi repellendus facilis, laboriosam assumenda aliquam saepe quo dicta.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-4 card">
-                        <div class="card-header">
-                            <i class="fa-regular fa-file-code"></i>
-                            <h3>Clean code</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum sed architecto nisi repellendus facilis, laboriosam assumenda aliquam saepe quo dicta.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 card">
-                        <div class="card-header">
-                            <i class="fa-regular fa-file-code"></i>
-                            <h3>Clean code</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum sed architecto nisi repellendus facilis, laboriosam assumenda aliquam saepe quo dicta.</p>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-features">
+                                <div class="card-header">
+                                    <i class="fa-regular fa-file-code"></i>
+                                    <h3>Clean code</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum sed architecto nisi repellendus facilis, laboriosam assumenda aliquam saepe quo dicta.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-4 card">
-                        <div class="card-header">
-                            <i class="fa-regular fa-file-code"></i>
-                            <h3>Clean code</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum sed architecto nisi repellendus facilis, laboriosam assumenda aliquam saepe quo dicta.</p>
-                        </div>
-                    </div>
-                    <div class="col-4 card">
-                        <div class="card-header">
-                            <i class="fa-regular fa-file-code"></i>
-                            <h3>Clean code</h3>
-                        </div>
-                        <div class="card-body">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum sed architecto nisi repellendus facilis, laboriosam assumenda aliquam saepe quo dicta.</p>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-features">
+                                <div class="card-header">
+                                    <i class="fa-regular fa-file-code"></i>
+                                    <h3>Clean code</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum sed architecto nisi repellendus facilis, laboriosam assumenda aliquam saepe quo dicta.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-features">
+                                <div class="card-header">
+                                    <i class="fa-regular fa-file-code"></i>
+                                    <h3>Clean code</h3>
+                                </div>
+                                <div class="card-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum sed architecto nisi repellendus facilis, laboriosam assumenda aliquam saepe quo dicta.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -88,16 +112,20 @@
                 <div class="row">
                     <div class="col-6 planning-left">
                         <figure><img src="./img/planning1.png"></figure>
-                        <h3>Strategic planning</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dicta atque tempore perferendis nostrum magni quo aperiam labore in. Cupiditate eius itaque a facilis doloremque placeat adipisci, qui inventore maxime ut commodi mollitia voluptatem magni eum vel consectetur rerum modi?</p>
+                        <h2>Strategic planning</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, tenetur accusantium! Labore eos maxime vero vitae nisi. Exercitationem, consectetur. Iste!</p>
                     </div>
-                    <div class="col-6 planning-right card">
-                        <figure><img src="./img/planning2.png"></figure>
-                        <h3>App developement</h3>
-                        <p>Develope on on-demand app for your delivery business to reach your targeted customers without any interruption.</p>
-                        <a href="#" class="button">
-                            <i class="fa-solid fa-arrow-down-long"></i>
-                        </a>
+                    <div class="col-6 planning-right">
+                        <div class="card">
+                            <div class="card-features">
+                                <figure><img src="./img/planning2.png"></figure>
+                                <h3>App developement</h3>
+                                <p>Develope on on-demand app for your delivery business to reach your targeted customers without any interruption.</p>
+                                <a href="#" class="button">
+                                    <i class="fa-solid fa-arrow-down-long"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

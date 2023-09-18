@@ -60,8 +60,6 @@ a{
 [class^="col-"]{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 12px;
-    padding-right: 12px;
 }
 
 .col-4{
@@ -84,6 +82,10 @@ p{
 
 
 
+
+
+
+
 /*header*/
 
 .row.navigation-menu{
@@ -93,7 +95,7 @@ p{
 }
 
 .navigation-menu{
-    padding: 18px 0;
+    padding: 18px 12px;
 }
 
 .nav-list{
@@ -108,9 +110,9 @@ p{
 }
 
 .nav-list-item{
-    color: white;
     font-size: 18px;
     line-height: 38px;
+    color: white;
 }
 
 #nav-list-button{
@@ -119,30 +121,23 @@ p{
     padding: 6px 15px;
 }
 
+.nav-list-icon{
+    display: none;
+    color: white;
+}
+
 .page-header{
     margin-bottom: 50px;
 }
 
 /*hero*/
 
-.hero .row{
-    justify-content: center;
-}
-
-
-
-#big-card{
-    flex-direction: row;
-}
-
 .hero .card-header{
     color: var(--blue);
 }
 
-.hero [class^=big-card-]{
-    display: flex;
-    max-width: 50%;
-    justify-content: center;
+#phone{
+    align-self: flex-end;
 }
 
 .hero .big-card-left{
@@ -156,30 +151,34 @@ p{
     padding: 6px 35px;
 }
 
-.big-card-right img{
+#big-card img{
     max-width: 50%;
 }
 
 .hero .card{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.card .card-features{
     background-color: var(--light-blue);
     border-radius: 20px;
-}
-
-.hero .card-header i{
-    font-size: 64px;
-    align-self:center
-}
-
-.hero .col-4.card>*{
-    padding: 12px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.hero .col-4.card .card-header{
-    flex-direction: column;
-    row-gap: 24px;
+#big-card .card-features{
+    flex-direction: row;
+}
+
+.hero .card-header i{
+    font-size: 64px;
+}
+
+.hero .card-header{
+    text-align: center;
 }
 
 .hero{
@@ -192,26 +191,82 @@ p{
     background-color: var(--purple);
 }
 
-.planning .col-6.card{
-    background-color: white;
-    border-radius: 20px;
-    justify-content: center;
-    padding: 20px;
-}
-
 .planning-left figure{
     padding: 80px 0;
 }
 
-.planning-left h3{
+.planning-left h2{
     padding: 50px 0;
 }
 
+.planning-left{
+    color: white;
+}
+
+.planning-right .card-features{
+    background-color: white;
+    border-radius: 50px;
+    justify-content: center;
+    padding: 40px;
+}
+
+.planning-right .card-features > *{
+    padding: 16px;
+}
+
+.planning-right{
+    align-self: flex-end;
+}
+
+.planning-right p{
+    font-style: italic;
+    text-align: center;
+}
+
+.planning-right .button{
+    background-color: var(--purple);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.planning-left,
+.planning-right{
+    padding: 40px;
+}
+
+.planning{
+    margin-bottom: 50px;
+}
+
+@media (max-width: 575.98px) {
+    /*hero*/
+    .hero [class^=col-]{
+        flex-basis: 100%;
+    }
+}
 
 
+@media (max-width: 991.98px) {
+    /*header*/
+    .nav-list-icon{
+        display: block;
+    }
+    .nav-list{
+        display: none;
+    }
 
+    /*hero*/
+    #big-card .card-features{
+        flex-wrap: wrap;
+    }
 
-
+    /*planning*/
+    .planning [class^=col-]{
+        flex-basis: 100%;
+    }
+}
 
 
 
